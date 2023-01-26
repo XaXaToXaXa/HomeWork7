@@ -26,7 +26,7 @@ for (int i = 0; i < columns; i++)
     {
         average += myArray[j, i];
     }
-    Console.WriteLine($"Cреднее арифметическое элементов столбца {i + 1} = {(double)average / rows:F2}");
+    Console.WriteLine($"Cреднее арифметическое элементов столбца {i + 1} = {average / rows:F2}");
 }
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
