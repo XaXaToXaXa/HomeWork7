@@ -11,7 +11,13 @@ int rows = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов массива: ");
 int columns = int.Parse(Console.ReadLine());
 
-double[,] array = GetArray(rows, columns, -100.0, 100.0);
+Console.Write("Задайте начальное значение массива: ");
+double start = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Задайте конечное значение массива: ");
+double end = Convert.ToDouble(Console.ReadLine());
+
+double[,] array = GetArray(rows, columns, start, end);
 PrintArray(array);
 
 double[,] GetArray(int row, int column, double start, double end)
